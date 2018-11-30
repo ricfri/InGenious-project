@@ -3,9 +3,6 @@
 ## Introduktion
 
 Ett projekt i kursen InGenious om användarvänlig AR <br/>
-Här kan du läsa om information relaterat projektets mjukvara för:
-
- - Gitstruktur och riktlinjer
 
 ## Använding av git och hur man bidrar med kodändringar
 Här kommer info om hur vi använder oss av git och Github.
