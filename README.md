@@ -3,14 +3,11 @@
 ## Introduktion
 
 Ett projekt i kursen InGenious om användarvänlig AR <br/>
-Här kan du läsa om information relaterat projektets mjukvara för:
 
- - Gitstruktur och riktlinjer
-
-## Gitstruktur och riktlinjer
+## Använding av git och hur man bidrar med kodändringar
 Här kommer info om hur vi använder oss av git och Github.
 
-### Hämta och sätt upp gitrepo
+### Hämta och sätt upp gitrepo (operativsystem linux/OSX)
 
 Följ dessa steg så kommer du snart ha en färdig installation.
 1.  Öppna kommandotolken
@@ -41,3 +38,10 @@ Följ dessa steg så kommer du snart ha en färdig installation.
     ```
     git clone git@github.com:ricfri/InGenious-project.git
     ```
+### Göra ändringar och bidra med kod till gitrepot (arbetsmiljö Atom)
+1. Se till ha projektet öppet i Atom
+2. Klicka på 'files' nere till höger.
+3. Dubbelklicka och lägg till de filer du har ändrat så att det hamnar i 'Staged Changes'
+4. Skriv ett 'commit message' där du skriver vad du ändrat
+5. klicka på commit knappen
+6. Klicka på 'push' där nere, så skickas det upp till gitrepot på github.
