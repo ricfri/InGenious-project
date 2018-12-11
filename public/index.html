@@ -17,18 +17,53 @@
   </head>
 
   <body>
-    <div class="d-flex h-100 p-3 flex-column justify-content-center">
+    <div class="d-flex h-100 p-3 flex-column justify-content-center ">
 
-      <main>
-        <p class="lead">Please tap these glasses</p>
-        <a href="#">
+      <main id="1" style="position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);">
+        <p class="lead">Please make the person WEAR these glasses (click)</p>
+        <a href="#" onclick="getElementById('1').style.display = 'none'; getElementById('2').style.display = 'initial'">
           <img src="./images/ar-glasses.svg" class="img-fluid">
         </a>
       </main>
 
+      <main id="2" style="position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); display: none;">
+        <p class="lead">Tänk om jag kunde läsa om när denna finfina tunnelbana byggdes. Och hur dom egentligen gjorde allt, utan att behöva google hela tiden!</p>
+        <a href="#" onclick="getElementById('2').style.display = 'none'; getElementById('3').style.display = 'initial'">
+          <img src="./images/WikiAR2.jpg" class="img-fluid">
+        </a>
+      </main>
+
+      <main id="3" style="position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); display: none;">
+        <p class="lead">WikiAR - läs och upptäck historien om allt och runtomkring dig</p>
+        <a href="#" onclick="getElementById('3').style.display = 'none'; getElementById('4').style.display = 'initial'">
+          <img src="./images/WikiAR2.jpg" class="img-fluid">
+        </a>
+      </main>
+
+      <main id="4" style="position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); display: none;">
+        <p class="lead">Be smart</p>
+        <p class="lead" style="font-weight: bold;">WEAR</p>
+        <p class="lead">
+          <span style="font-weight: 500;">W</span>onderful
+          <span style="font-weight: 500;">E</span>asy
+          <span style="font-weight: 500;">A</span>ugmented
+          <span style="font-weight: 500;">R</span>eality
+        </p>
+      </main>
+
     </div>
-
-
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
