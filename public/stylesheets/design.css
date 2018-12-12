@@ -111,3 +111,11 @@ body {
   color: #000;
   background-color: #4e4;
 }
+
+#example {
+  background: url('../images/ARman.png');
+  background-repeat: no-repeat;
+  background-size: 400px 400px;
+  width: 400px;
+  height: 400px;
+}
