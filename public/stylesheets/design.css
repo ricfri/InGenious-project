@@ -41,7 +41,7 @@ body {
   16% { transform: translate(-1px, -1px) rotate(1deg); }
   18% { transform: translate(1px, 2px) rotate(0deg); }
   20% { transform: translate(1px, -2px) rotate(-1deg); }
-  20.1% {transform: translate(0px, 0, 0); }
+  20.1% {}
 }
 
 /*
@@ -75,4 +75,39 @@ body {
 .nav-masthead .active {
   color: #fff;
   border-bottom-color: #fff;
+}
+
+/*
+ * Interaction
+ */
+
+.dropzone {
+  background-color: #ccc;
+  width: 80%;
+  transition: background-color 0.3s;
+}
+
+.drop-active {
+  border-color: #aaa;
+}
+
+.drop-target {
+  background-color: #29e;
+  border-color: #fff;
+  border-style: solid;
+}
+
+.drag-drop {
+  display: inline-block;
+  max-width: 60px;
+
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+
+  transition: background-color 0.3s;
+}
+
+.drag-drop.can-drop {
+  color: #000;
+  background-color: #4e4;
 }
