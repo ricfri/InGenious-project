@@ -1,10 +1,11 @@
 /* The dragging code for '.draggable' from the demo above
  * applies to this demo as well so it doesn't have to be repeated. */
+var interactIndex = 1
 
 // enable draggables to be dropped into this
 interact('.dropzone').dropzone({
   // only accept elements matching this CSS selector
-  accept: '#yes-drop',
+  accept: '.yes-drop',
   // Require a 75% element overlap for a drop to be possible
   overlap: 0.75,
 
@@ -30,10 +31,9 @@ interact('.dropzone').dropzone({
     event.relatedTarget.textContent = 'Dragged out';
   },
   ondrop: function (event) {
-    //event.relatedTarget.textContent = 'Dropped';
-    // TDOD: generalise so that the functions works on every ARglasses drop
-    document.getElementById('1').style.display = 'none';
-    document.getElementById('2').style.display = 'initial'
+    document.getElementById(interactIndex.toString()).style.display = 'none';
+    interactIndex+=1
+    document.getElementById(interactIndex.toString()).style.display = 'initial'
   },
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
