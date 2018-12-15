@@ -8,5 +8,8 @@
   "dependencies": {
     "express": "~4.16.0",
     "serve-favicon": "^2.5.0"
+  },
+  "devDependencies": {
+    "htmlhint": "^0.10.1"
   }
 }

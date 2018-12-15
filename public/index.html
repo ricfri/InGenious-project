@@ -20,90 +20,89 @@
   </head>
 
   <body>
-    <div class="d-flex h-100 p-3 flex-column justify-content-center ">
-
-      <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark">
-     <a class="navbar-brand" href="#">WEAR</a>
-       <ul class="navbar-nav ml-auto">
-         <li class="nav-item dropdown">
-           <a class="nav-link" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="navbar-toggler-icon"></span></a>
-           <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
-             <a class="dropdown-item" href="#">About</a>
-             <a class="dropdown-item" href="#">Use cases</a>
-           </div>
-         </li>
-       </ul>
+    <nav class="navbar navbar-expand navbar-dark fixed-top bg-dark">
+      <a class="navbar-brand" href="#">WEAR</a>
+      <ul class="navbar-nav ml-auto">
+       <li class="nav-item dropdown">
+         <a class="nav-link" href="http://example.com" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           <span class="navbar-toggler-icon"></span>
+         </a>
+         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdown01">
+           <a class="dropdown-item" href="#">About</a>
+           <a class="dropdown-item" href="#">Use cases</a>
+         </div>
+       </li>
+     </ul>
    </nav>
 
-      <main id="1" style="position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%);">
-        <p class="lead">Please make ARman WEAR the glasses</p>
+   <section id="context" class="bg-light">
+     ggdgdf dgdgdgdf
+   </section>
 
+   <section id="interactive">
+     <div class="interact-case">
 
-        <div id="example">
-          <div class="dropzone" href="/weather.phtml" style="background: rgba(0, 0, 0, 0); width: 100px; height: 80px; border: 0; position: absolute; top: 140px; left: 150px;"></div>
-          <img id="yes-drop" class="img-fluid img-shake drag-drop" src="./images/ar-glasses.svg">
+       <main id="1">
+         <p class="lead">Please make ARman WEAR the glasses</p>
+         <div id="example">
+           <div class="dropzone" style="width: 90px; height: 60px; top: 100px; left: 155px;"></div>
+           <img id="yes-drop" class="img-fluid img-shake drag-drop" style="position: relative; left: 70px;" src="./images/ARman_glasses-02.png">
+         </div>
+       </main>
+     </div>
 
-        </div>
-      </main>
+       <main id="2" style="display: none;">
+         <p class="lead">Tänk om jag kunde läsa om när denna finfina tunnelbana byggdes. Och hur dom egentligen gjorde allt, utan att behöva google hela tiden!</p>
+         <div>
+           <img src="./images/BerlinUBahn.jpg" class="img-fluid">
+           <div class="dropzone" style="width: 100px; height: 80px; border: 0; top: 140px; left: 150px;"></div>
+           <img class="img-fluid" src="./images/ARman_wo_glasses_Rityta1.png" style="background: rgba(0, 0, 0, 0); width: 100px; height: 80px; border: 0; position: relative;; top: 140px; left: 150px;">
+           <img id="yes-drop" class="img-fluid img-shake drag-drop" src="./images/ARman_glasses-02.png">
+         </div>
+       </main>
 
-      <main id="2" style="position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%); display: none;">
-        <p class="lead">Tänk om jag kunde läsa om när denna finfina tunnelbana byggdes. Och hur dom egentligen gjorde allt, utan att behöva google hela tiden!</p>
-        <a href="#" onclick="getElementById('2').style.display = 'none'; getElementById('3').style.display = 'initial'">
-          <img src="./images/BerlinUBahn.jpg" class="img-fluid">
-        </a>
-      </main>
+       <main id="3" style="display: none;">
+         <p class="lead">WikiAR - läs och upptäck historien om allt runtomkring dig</p>
+         <a href="#" onclick="getElementById('3').style.display = 'none'; getElementById('4').style.display = 'initial'">
+           <img src="./images/WikiAR2.jpg" class="img-fluid">
+         </a>
+       </main>
 
-      <main id="3" style="position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%); display: none;">
-        <p class="lead">WikiAR - läs och upptäck historien om allt runtomkring dig</p>
-        <a href="#" onclick="getElementById('3').style.display = 'none'; getElementById('4').style.display = 'initial'">
-          <img src="./images/WikiAR2.jpg" class="img-fluid">
-        </a>
-      </main>
+       <main id="4" style="display: none;">
+         <p class="lead">Tog jag rätt avfart nu? Tänk om jag bara kunde se på rutan om det är den rätta</p>
+         <a href="#" onclick="getElementById('4').style.display = 'none'; getElementById('5').style.display = 'initial'">
+           <img src="./images/Road1.jpg" class="img-fluid">
+         </a>
+       </main>
 
-      <main id="4" style="position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%); display: none;">
-        <p class="lead">Tog jag rätt avfart nu? Tänk om jag bara kunde se på rutan om det är den rätta</p>
-        <a href="#" onclick="getElementById('4').style.display = 'none'; getElementById('5').style.display = 'initial'">
-          <img src="./images/Road1.jpg" class="img-fluid">
-        </a>
-      </main>
+       <main id="5" style="display: none;">
+         <p class="lead">VindruteAR - gör färden enklare, se allt du behöver veta direkt på vindrutan</p>
+         <a href="#" onclick="getElementById('5').style.display = 'none'; getElementById('6').style.display = 'initial'">
+           <img src="./images/VindrutAR1.jpg" class="img-fluid">
+         </a>
+       </main>
 
-      <main id="5" style="position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%); display: none;">
-        <p class="lead">VindruteAR - gör färden enklare, se allt du behöver veta direkt på vindrutan</p>
-        <a href="#" onclick="getElementById('5').style.display = 'none'; getElementById('6').style.display = 'initial'">
-          <img src="./images/VindrutAR1.jpg" class="img-fluid">
-        </a>
-      </main>
+       <main id="6" style="display: none;">
+         <p class="lead">Be like ARman, be smart</p>
+         <p class="lead" style="font-weight: bold;">WEAR</p>
+         <p class="lead">
+           <span style="font-weight: 500;">W</span>onderful
+           <span style="font-weight: 500;">E</span>asy
+           <span style="font-weight: 500;">A</span>ugmented
+           <span style="font-weight: 500;">R</span>eality
+         </p>
+       </main>
+   </section>
 
-      <main id="6" style="position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%,-50%); display: none;">
-        <p class="lead">Be like ARman, be smart</p>
-        <p class="lead" style="font-weight: bold;">WEAR</p>
-        <p class="lead">
-          <span style="font-weight: 500;">W</span>onderful
-          <span style="font-weight: 500;">E</span>asy
-          <span style="font-weight: 500;">A</span>ugmented
-          <span style="font-weight: 500;">R</span>eality
-        </p>
-      </main>
+   <section id="usecase1" class="bg-light">
+   </section>
 
-    </div>
+   <section id="usecase2">
+   </section>
+
+   <section id="usecase3" class="bg-light">
+   </section>
+
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
