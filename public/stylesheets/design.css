@@ -117,7 +117,7 @@ section h3.section-subheading {
 
 .dropzone {
   transition: background-color 0.3s;
-  background: rgba(0, 65, 0, 3);
+  background: rgba(0, 0, 0, 0);
   position: relative;
 }
 
@@ -126,9 +126,6 @@ section h3.section-subheading {
 }
 
 .drop-target {
-  background-color: #29e;
-  border-color: #fff;
-  border-style: solid;
 }
 
 .drag-drop {
@@ -152,4 +149,20 @@ section h3.section-subheading {
   background-size: 400px 400px;
   width: 400px;
   height: 400px;
+}
+
+#tun {
+  background: url('../images/BerlinUBahn.jpg');
+  background-repeat: no-repeat;
+  background-size: 646px 430px;
+  width: 646px;
+  height: 430px;
+}
+
+#wik {
+  background: url('../images/WikiAR2.jpg');
+  background-repeat: no-repeat;
+  background-size: 646px 430px;
+  width: 646px;
+  height: 430px;
 }
