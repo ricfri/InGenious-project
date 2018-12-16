@@ -54,6 +54,10 @@ section h3.section-subheading {
   justify-content: center;
 }
 
+.w-100 {
+  margin-top: 40px;
+}
+
 .img-shake {
   animation: shake 4s;
   animation-iteration-count: infinite;
