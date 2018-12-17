@@ -57,6 +57,8 @@ section h2.section-heading {
   display: flex;
   align-items: center;
   justify-content: center;
+  -ms-touch-action: none;
+  touch-action: none;
 }
 
 .row img {
@@ -119,12 +121,14 @@ section h2.section-heading {
 
 .drag-drop {
   display: inline-block;
-  max-width: 60px;
-
+  background: url('../images/ARman_glasses-02.png');
+  background-repeat: no-repeat;
+  background-size:100%;
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
-
   transition: background-color 0.3s;
+  width: 60px;
+  height: 21px;
 }
 
 .drag-drop.can-drop {
