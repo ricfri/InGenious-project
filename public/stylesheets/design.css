@@ -21,6 +21,7 @@ body {
 section {
   padding: 100px 0;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
@@ -35,8 +36,20 @@ section h2.section-heading {
   flex-direction: column;
   max-width: 80%;
   display: flex;
-  align-items: center;
+  position: relative;
+}
+
+.media-box {
+  max-width: 95%;
+  display: flex;
+  position: relative;
   justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.media-box img {
+  max-width: 85%;
+  align-self: center;
 }
 
 .interact-case {
@@ -79,10 +92,12 @@ section h2.section-heading {
  */
 .navbar-brand {
   color: #39818c !important;
-  font-size: 30px;
+  font-size: 50px;
   font-family: sneakers-script, sans-serif;
   font-style: normal;
   font-weight: 500;
+  padding-bottom: 0px;
+  padding-top: 0px;
 }
 
 /*

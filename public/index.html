@@ -20,10 +20,13 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-expand fixed-top navbar-light bg-light">
-      <a class="navbar-brand" href="#">WEAR</a>
-      <ul class="navbar-nav ml-auto">
-       <li class="d-md-none nav-item dropdown">
+    <nav class="navbar navbar-expand navbar-light bg-light">
+      <div style="display:flex; flex-direction: column;">
+        <a class="navbar-brand" href="#">WEAR</a>
+        <div class="small" style="padding-bottom: 5px;">How would you like to augment your reality?</div>
+      </div>
+      <ul class="d-md-none navbar-nav ml-auto">
+       <li class=" nav-item dropdown">
          <a class="nav-link" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
            <span class="navbar-toggler-icon"></span>
          </a>
@@ -33,22 +36,57 @@
            <a class="dropdown-item" href="#usecases">USE-CASES</a>
          </div>
        </li>
-       <li class="d-none d-md-inline-flex">
-         <a class="dropdown-item" href="#context">ABOUT</a>
-         <a class="dropdown-item" href="#interactive">INTERACT</a>
+       </ul>
+       <ul class="navbar-nav ml-auto d-none d-md-inline-flex align-self-end">
+         <li class="nav-item">
+					<a class="dropdown-item" href="#context" >ABOUT</a>
+				</li>
+				<li class="nav-item">
+					<a class="dropdown-item" href="#interactive">INTERACT</a>
+				</li>
+        <li class="nav-item">
          <a class="dropdown-item" href="#usecases">USE-CASES</a>
        </li>
      </ul>
    </nav>
 
 
-   <section id="context" class="bg-light">
+   <section id="context" class="bg-light" style="flex-direction: column;">
+     <h2 class="section-heading" style="color: #4c8d97; align-self: start; margin-left: 2%;">"We are WEAR. WEAR for you."</h2>
      <div class="section-box">
-       <h2 class="section-heading">Lorem ipsum</h2>
-       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-       Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-       Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+       <p>
+       This is a webpage mockup made in guise of belonging to a generic AR-solutions supplying company in the future.
+      </p>
+      <p>
+       Our goal has been to look into where the AR-technology is heading and what we can expect from it in the years to come.
+      </p>
+      <p>
+        One of the results is this webpage and a few use-cases that we believe are viable examples of what AR could, and quite possibly will, be used for in the future as part of our every day lives.
+      </p>
+      <p class="align-self-end">
+      // generic LiU students
+    </p>
+     </div>
+
+     <div class="media-box">
+       <img src="./images/Road1.jpg" class="img-fluid">
+       <text style="font-size: 32vw; color: rgba(57,129,140,0.4); position: absolute; align-self: center;">WEAR</text>
+       <text style="font-size: 7vw; color: white; position: absolute; align-self: center; line-height: 1.1;">
+         Our software <br>is made <br> for <span style="font-weight: 100;">you</span>
+       </text>
+    </div>
+
+     <h2 class="section-heading" style="color: #4c8d97;">WEAR for you</h2>
+     <div class="section-box">
+       <p>
+         We believe that AR should be easy. Wonderfully easy.
+       </p>
+      <p>
+        Since the start, our goal has been our customer. Your life, your everyday and your journey.
+      </p>
+      <p>
+        Our software is easy to use and is compatible with the latest tech and adapted to be user friendly and hassle free.
+      </p>
      </div>
    </section>
 
@@ -105,8 +143,27 @@
    </section>
 
    <section id="usecases" class="bg-light">
+    <h2 class="section-heading">Use cases</h2>
+
+    <div class="media-box">
+      <img src="./images/Road2.jpg" class="img-fluid">
+      <text style="font-size: 32vw; color: rgba(230,230,230,0.5); position: absolute; align-self: center;">WEAR</text>
+      <text style="font-size: 6vw; color: #4c8d97; position: absolute; top: 30%; line-height: 1.1;">
+        Your reality. <br> Simplified.
+      </text>
+   </div>
+
+   <div class="section-box">
+     <p>
+       We have gathered a few examples of use cases below. <br>
+       Feel free to scroll through these cases and see what could be augmented in your future!
+     </p>
+   </div>
+   </section>
+
+
+   <section id="usecase1">
     <div class="section-box">
-     <h2 class="section-heading">Use cases</h2>
      <p class="lead">WikiAR - läs och upptäck historien om allt runtomkring dig</p>
      <div class="container">
        <div class="row">
@@ -123,7 +180,7 @@
     </div>
    </section>
 
-   <section id="usecase2">
+   <section id="usecase2" class="bg-light">
      <div class="section-box">
        <p class="lead">VindruteAR - gör färden enklare, se allt du behöver veta direkt på vindrutan</p>
        <div class="container">
@@ -141,7 +198,7 @@
      </div>
    </section>
 
-   <section id="usecase3" class="bg-light">
+   <section id="usecase3">
      <div class="section-box">
        <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
        <div class="container">
