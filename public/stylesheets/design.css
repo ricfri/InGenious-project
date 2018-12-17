@@ -102,6 +102,13 @@ section h2.section-heading {
   padding-top: 0px;
 }
 
+.media-brand {
+  font-size: 28vw;
+  font-family: sneakers-script, sans-serif;
+  position: absolute;
+  align-self: center;
+}
+
 /*
  * Interaction
  */
