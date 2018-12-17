@@ -59,8 +59,8 @@ section h2.section-heading {
   justify-content: center;
 }
 
-.w-100 {
-  margin-top: 40px;
+.row img {
+  margin-bottom: 40px;
 }
 
 .img-shake {
