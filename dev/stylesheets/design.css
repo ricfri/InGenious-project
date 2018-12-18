@@ -167,6 +167,9 @@ section h2.section-heading {
   width: 646px;
   height: 430px;
 }
+main p {
+  max-width: 646px;
+}
 
 .wiki-off {
   background-image: url('../images/BerlinUBahn.jpg');
