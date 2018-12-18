@@ -69,17 +69,17 @@ section {
 }
 
 @keyframes shake {
-  0% { transform: translate(1px, 1px) rotate(0deg); }
-  2% { transform: translate(-1px, -2px) rotate(-1deg); }
-  4% { transform: translate(-3px, 0px) rotate(1deg); }
-  6% { transform: translate(3px, 2px) rotate(0deg); }
-  8% { transform: translate(1px, -1px) rotate(1deg); }
-  10% { transform: translate(-1px, 2px) rotate(-1deg); }
-  12% { transform: translate(-3px, 1px) rotate(0deg); }
-  14% { transform: translate(3px, 1px) rotate(-1deg); }
-  16% { transform: translate(-1px, -1px) rotate(1deg); }
-  18% { transform: translate(1px, 2px) rotate(0deg); }
-  20% { transform: translate(1px, -2px) rotate(-1deg); }
+  0% { transform: translate(0.08vw, 0.08vw) rotate(0deg); }
+  2% { transform: translate(-0.08vw, -0.16vw) rotate(-1deg); }
+  4% { transform: translate(-0.24vw, 0vw) rotate(1deg); }
+  6% { transform: translate(0.24vw, 0.16vw) rotate(0deg); }
+  8% { transform: translate(0.08vw, -0.08vw) rotate(1deg); }
+  10% { transform: translate(-0.08vw, 0.16vw) rotate(-1deg); }
+  12% { transform: translate(-0.24vw, 0.08vw) rotate(0deg); }
+  14% { transform: translate(0.024vw, 0.08vw) rotate(-1deg); }
+  16% { transform: translate(-0.08vw, -0.08vw) rotate(1deg); }
+  18% { transform: translate(0.08vw, 0.16vw) rotate(0deg); }
+  20% { transform: translate(0.08vw, -0.16vw) rotate(-1deg); }
   20.1% {}
 }
 
@@ -128,8 +128,8 @@ section h2.section-heading {
  */
 
 .dropzone {
-  width: 90px;
-  height: 60px;
+  width: 7.03vw;
+  height: 4.69vw;
   transition: background-color 0.3s;
   background: rgba(0, 0, 0, 0);
   position: absolute;
@@ -151,8 +151,8 @@ section h2.section-heading {
   -webkit-transform: translate(0px, 0px);
           transform: translate(0px, 0px);
   transition: background-color 0.3s;
-  width: 60px;
-  height: 21px;
+  width: 4.69vw;
+  height: 1.64vw;
 }
 
 .drag-drop.can-drop {
@@ -170,8 +170,8 @@ section h2.section-heading {
   background-image: url('../images/ARman_wo_glasses_Rityta1.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 400px;
-  height: 400px;
+  width: 31.25vw;
+  height: 31.25vw;
 }
 
 .arman {
@@ -179,19 +179,19 @@ section h2.section-heading {
   background-image: url('../images/ARman_simple.png');
   background-repeat: no-repeat;
   background-size: cover;
-  width: 75px;
-  height: 182px;
+  width: 5.86vw;
+  height: 14.22vw;
 }
 
 .inter-background {
   position: relative;
   background-repeat: no-repeat;
   background-size: cover;
-  width: 646px;
-  height: 430px;
+  width: 50.47vw;
+  height: 33.59vw;
 }
 main p {
-  max-width: 646px;
+  max-width: 50.47vw;
 }
 
 .wiki-off {
