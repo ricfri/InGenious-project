@@ -1,6 +1,8 @@
 const imagemin = require('imagemin');
 const imageminMozjpeg = require('imagemin-mozjpeg');
 const imageminPngquant = require('imagemin-pngquant');
+const ImageminGm = require('imagemin-gm')
+const imageminGm = new ImageminGm()
 const fs = require('fs');
 const path = require('path');
 const argv = require('minimist')(process.argv.slice(2));
@@ -19,15 +21,19 @@ if (argv.out) {
   outDir = 'optimized';
 }
 
+// scale down & compress images
 imagemin([`${inDir}/*.{jpg,png}`], outDir, {
   plugins: [
-    imageminMozjpeg({quality: '30'}),
+    imageminGm.resize({ width: 1920, height: 1000, gravity: 'Center' }),
+    imageminMozjpeg({quality: '60'}),
     imageminPngquant({quality: '65-80'}),
   ]
 }).then(files => {
   console.log('Image Optimization Reults');
   console.log('==============================');
   logStats(files);
+}, error => {
+  console.log(error);
 });
 
 function logStats(files) {
