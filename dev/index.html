@@ -8,10 +8,6 @@
     <!-- Font script -->
     <link rel="stylesheet" href="https://use.typekit.net/ado1fwl.css">
 
-    <!-- Material Design for Bootstrap fonts and icons -->
-    <link rel="stylesheet" href="https://use.typekit.net/ado1fwl.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Material+Icons">
-
     <!-- Material Design for Bootstrap CSS -->
     <link rel="stylesheet" href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css" integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
@@ -98,49 +94,86 @@
      <div class="interact-case">
        <main id="1">
          <p class="lead">Please make ARman WEAR the glasses</p>
-         <div id="example">
-           <div class="dropzone" style="width: 90px; height: 60px; top: 100px; left: 155px;"></div>
-           <div class="yes-drop img-fluid img-shake drag-drop" style="position: relative; left: 70px;"/>
+         <div class="intro">
+           <div class="dropzone" style="top: 100px; left: 155px;"></div>
+           <div class="yes-drop img-fluid img-shake drag-drop" style="top: 60px; left: 70px;"></div>
          </div>
        </main>
 
        <main id="2" style="display: none;">
-         <p class="lead">Tänk om jag kunde läsa om när denna finfina tunnelbana byggdes. Och hur dom egentligen gjorde allt, utan att behöva google hela tiden!</p>
-         <div id="tun">
-           <img src="./images/ARman_wo_glasses_Rityta1.png" style="width: 200px; height: 200px; position: relative; top: 230px; left: 70px;">
-           <div class="dropzone" style="width: 90px; height: 60px; top: 60px; left: 120px; position: relative;"></div>
-           <div class="yes-drop img-fluid img-shake drag-drop" style="position: relative; top: 130px; left: 320px;"/>
+         <div class="wiki-off inter-background">
+           <div class="intro" style="width: 200px; height: 200px; position: absolute; top: 230px; left: 70px;"></div>
+           <div class="dropzone" style="top: 260px; left: 120px"></div>
+           <div class="yes-drop img-fluid img-shake drag-drop" style="top: 370px; left: 270px;"></div>
          </div>
+         <p class="lead">
+           Tänk om jag kunde läsa om när denna finfina tunnelbana byggdes.
+           Och hur dom egentligen gjorde allt, utan att behöva google hela tiden!
+         </p>
        </main>
 
        <main id="3" style="display: none;">
-         <p class="lead">WikiAR - läs och upptäck historien om allt runtomkring dig</p>
-         <div id="wik"/>
+         <div class="wiki-on inter-background"></div>
+         <p class="lead">
+           WikiAR - läs och upptäck historien om allt runtomkring dig
+           <a class="dropdown-item bg-light continue" onclick="nextScene();">CONTINUE</a>
+         </p>
        </main>
 
        <main id="4" style="display: none;">
-         <p class="lead">Tog jag rätt avfart nu? Tänk om jag bara kunde se på rutan om det är den rätta</p>
-         <a href="#" onclick="getElementById('4').style.display = 'none'; getElementById('5').style.display = 'initial'">
-           <img src="./images/Road1.jpg" class="img-fluid">
-         </a>
+         <div class="vind-off inter-background">
+           <div class="intro" style="width: 200px; height: 200px; position: absolute;
+              top: 170px; left: 400px; -moz-transform: scaleX(-1); -o-transform: scaleX(-1);
+              -webkit-transform: scaleX(-1); transform: scaleX(-1);"></div>
+           <div class="dropzone" style="top: 210px; left: 460px"></div>
+           <div class="yes-drop img-fluid img-shake drag-drop" style="top: 330px; left: 270px;"></div>
+         </div>
+         <p class="lead">
+           Tog jag rätt avfart nu? Tänk om jag bara kunde se på rutan om det är den rätta
+         </p>
        </main>
 
        <main id="5" style="display: none;">
-         <p class="lead">VindruteAR - gör färden enklare, se allt du behöver veta direkt på vindrutan</p>
-         <a href="#" onclick="getElementById('5').style.display = 'none'; getElementById('6').style.display = 'initial'">
-           <img src="./images/VindrutAR1.jpg" class="img-fluid">
-         </a>
+         <div class="vind-on inter-background"></div>
+         <p class="lead">
+           VindrutAR - gör färden enklare, se allt du behöver veta direkt på vindrutan
+           <a class="dropdown-item bg-light continue" onclick="nextScene();">CONTINUE</a>
+         </p>
        </main>
 
        <main id="6" style="display: none;">
-         <p class="lead">Be like ARman, be smart</p>
-         <p class="lead" style="font-weight: bold;">WEAR</p>
+         <div class="self-off inter-background">
+           <div class="intro" style="width: 200px; height: 200px; position: absolute; top: 230px; left: 70px;"></div>
+           <div class="dropzone" style="top: 260px; left: 120px"></div>
+           <div class="yes-drop img-fluid img-shake drag-drop" style="top: 370px; left: 270px;"></div>
+         </div>
          <p class="lead">
-           <span style="font-weight: 500;">W</span>onderful
-           <span style="font-weight: 500;">E</span>asy
-           <span style="font-weight: 500;">A</span>ugmented
-           <span style="font-weight: 500;">R</span>eality
+           Tänk om jag kunde läsa om när denna finfina tunnelbana byggdes.
+           Och hur dom egentligen gjorde allt, utan att behöva google hela tiden!
          </p>
+       </main>
+
+       <main id="7" style="display: none;">
+         <div class="self-on inter-background"></div>
+         <p class="lead">
+           WikiAR - läs och upptäck historien om allt runtomkring dig
+           <a class="dropdown-item bg-light continue" onclick="nextScene();">CONTINUE</a>
+         </p>
+       </main>
+
+       <main id="8" style="display: none;">
+         <div class="inter-background" style="display: flex; justify-content: center; align-items: center;">
+           <div>
+             <p class="lead">Be like ARman, be smart</p>
+             <p class="lead" style="font-weight: bold;">WEAR</p>
+             <p class="lead">
+               <span style="font-weight: bold;">W</span>onderful
+               <span style="font-weight: bold;">E</span>asy
+               <span style="font-weight: bold;">A</span>ugmented
+               <span style="font-weight: bold;">R</span>eality
+             </p>
+           </div>
+         </div>
        </main>
 
      </div>

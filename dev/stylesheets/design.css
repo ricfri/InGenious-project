@@ -55,7 +55,7 @@ section h2.section-heading {
 .interact-case {
   max-width: 70%;
   display: flex;
-  align-items: center;
+  position: relative;
   justify-content: center;
   -ms-touch-action: none;
   touch-action: none;
@@ -114,9 +114,11 @@ section h2.section-heading {
  */
 
 .dropzone {
+  width: 90px;
+  height: 60px;
   transition: background-color 0.3s;
   background: rgba(0, 0, 0, 0);
-  position: relative;
+  position: absolute;
 }
 
 .drop-active {
@@ -128,7 +130,8 @@ section h2.section-heading {
 
 .drag-drop {
   display: inline-block;
-  background: url('../images/ARman_glasses-02.png');
+  background-image: url('../images/ARman_glasses-02.png');
+  position: absolute;
   background-repeat: no-repeat;
   background-size:100%;
   -webkit-transform: translate(0px, 0px);
@@ -143,26 +146,48 @@ section h2.section-heading {
   background-color: #4e4;
 }
 
-#example {
-  background: url('../images/ARman_wo_glasses_Rityta1.png');
+.continue {
+  display: inline;
+  cursor:pointer;
+}
+
+.intro {
+  position: relative;
+  background-image: url('../images/ARman_wo_glasses_Rityta1.png');
   background-repeat: no-repeat;
-  background-size: 400px 400px;
+  background-size: cover;
   width: 400px;
   height: 400px;
 }
 
-#tun {
-  background: url('../images/BerlinUBahn.jpg');
+.inter-background {
+  position: relative;
   background-repeat: no-repeat;
-  background-size: 646px 430px;
+  background-size: cover;
   width: 646px;
   height: 430px;
 }
 
-#wik {
-  background: url('../images/WikiAR2.jpg');
-  background-repeat: no-repeat;
-  background-size: 646px 430px;
-  width: 646px;
-  height: 430px;
+.wiki-off {
+  background-image: url('../images/BerlinUBahn.jpg');
+}
+
+.wiki-on {
+  background-image: url('../images/WikiAR2.jpg');
+}
+
+.vind-off {
+  background-image: url('../images/Road3.jpg');
+}
+
+.vind-on {
+  background-image: url('../images/VindrutAR3.jpg');
+}
+
+.self-off {
+  background-image: url('../images/vanesa-conunaese-1097382-unsplash.jpg');
+}
+
+.self-on {
+  background-image: url('../images/OverlayLaga1.jpg');
 }

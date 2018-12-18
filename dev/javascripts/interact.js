@@ -1,7 +1,16 @@
 /* The dragging code for '.draggable' from the demo above
  * applies to this demo as well so it doesn't have to be repeated. */
-var interactIndex = 1
+var sceneIndex = 1
 interact.pointerMoveTolerance(5);
+
+function nextScene (event) {
+  element = document.getElementById(sceneIndex.toString())
+  if (element) {
+    element.style.display = 'none';
+    sceneIndex+=1
+    document.getElementById(sceneIndex.toString()).style.display = 'initial'
+  }
+}
 
 // enable draggables to be dropped into this
 interact('.dropzone').dropzone({
@@ -29,11 +38,7 @@ interact('.dropzone').dropzone({
     event.target.classList.remove('drop-target');
     event.relatedTarget.classList.remove('can-drop');
   },
-  ondrop: function (event) {
-    document.getElementById(interactIndex.toString()).style.display = 'none';
-    interactIndex+=1
-    document.getElementById(interactIndex.toString()).style.display = 'initial'
-  },
+  ondrop: nextScene,
   ondropdeactivate: function (event) {
     // remove active dropzone feedback
     event.target.classList.remove('drop-active');
