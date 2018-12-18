@@ -151,13 +151,22 @@ section h2.section-heading {
   cursor:pointer;
 }
 
-.intro {
+.arman-blobs {
   position: relative;
   background-image: url('../images/ARman_wo_glasses_Rityta1.png');
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
   height: 400px;
+}
+
+.arman {
+  position: absolute;
+  background-image: url('../images/ARman_simple.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 75px;
+  height: 182px;
 }
 
 .inter-background {
