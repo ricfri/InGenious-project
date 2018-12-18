@@ -26,12 +26,6 @@ section {
   justify-content: center;
 }
 
-section h2.section-heading {
-  font-size: 40px;
-  margin-top: 0;
-  margin-bottom: 15px;
-}
-
 .section-box {
   flex-direction: column;
   max-width: 80%;
@@ -107,6 +101,26 @@ section h2.section-heading {
   font-family: sneakers-script, sans-serif;
   position: absolute;
   align-self: center;
+}
+
+section h2.section-heading {
+  font-size: 40px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.header-italic {
+  font-family: gineso, sans-serif;
+  font-weight: 800;
+  font-style: italic;
+  color: #4c8d97;
+}
+
+.header {
+  font-family: gineso, sans-serif;
+  font-weight: 800;
+  font-style: normal;
+  color: #4c8d97;
 }
 
 /*
@@ -197,9 +211,9 @@ main p {
 }
 
 .self-off {
-  background-image: url('../images/vanesa-conunaese-1097382-unsplash.jpg');
+  background-image: url('../images/Fix1.jpg');
 }
 
 .self-on {
-  background-image: url('../images/OverlayLaga1.jpg');
+  background-image: url('../images/LagAR1.jpg');
 }
